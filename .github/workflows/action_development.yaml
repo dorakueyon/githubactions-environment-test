@@ -1,4 +1,4 @@
-name: Production Environment Action
+name: Development Environment Action
 
 on:
   workflow_dispatch:
