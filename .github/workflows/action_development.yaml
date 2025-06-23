@@ -1,0 +1,13 @@
+name: Production Environment Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "run to development"
+      - run: echo secret ${{ secrets.FOO }}
